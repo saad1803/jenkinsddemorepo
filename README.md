@@ -104,3 +104,5 @@ We use [BrowserStack](https://www.browserstack.com) to examine HTML report again
 ## Contribution
 
 Interested in contributing to the cucumber-reporting?  Great!  Start [here](https://github.com/damianszczepanik/cucumber-reporting).
+
+##Checking the pull request feature
