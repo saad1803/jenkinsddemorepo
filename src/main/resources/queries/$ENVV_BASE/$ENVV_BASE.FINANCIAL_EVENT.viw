@@ -1,0 +1,26 @@
+REPLACE VIEW $ENVV_BASE.FINANCIAL_EVENT AS
+SELECT
+     Event_Id
+    ,Account_Id
+    ,Tran_Amt
+    ,Principal_Amt
+    ,Interest_Amt
+    ,New_Balance
+    ,Channel_Cd
+    ,Channel
+    ,Tran_Code_Cd
+    ,Tran_Code
+    ,Tran_Date
+    ,Tran_Time
+    ,Start_Ts
+    ,End_Ts
+    ,Start_Date
+    ,End_Date
+    ,Record_Deleted_Flag
+    ,Ctl_Id
+    ,Process_Name
+    ,Process_Id
+    ,Update_Process_Name
+    ,Update_Process_Id
+FROM $ENVT_BASE.FINANCIAL_EVENT
+;

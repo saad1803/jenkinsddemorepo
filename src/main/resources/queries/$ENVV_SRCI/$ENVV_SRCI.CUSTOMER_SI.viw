@@ -1,0 +1,29 @@
+REPLACE VIEW $ENVV_SRCI.CUSTOMER_SI AS
+SELECT
+     Cust_Id
+    ,Income
+    ,Date_Of_Birth
+    ,Date_Joined_Bank
+    ,Nbr_Children
+    ,Gender
+    ,Marital_Status
+    ,Name_Prefix
+    ,First_Name
+    ,Last_Name
+    ,Street_Nbr
+    ,Street_Name
+    ,Postal_Code
+    ,City_Name
+    ,State_Code
+    ,Party_Id
+    ,Address_Id
+    ,Start_Date
+    ,End_Date
+    ,Record_Deleted_Flag
+    ,Ctl_Id
+    ,Process_Name
+    ,Process_Id
+    ,Update_Process_Name
+    ,Update_Process_Id
+FROM $ENVT_SRCI.CUSTOMER_SI
+;

@@ -1,0 +1,26 @@
+REPLACE VIEW $ENVV_SRCI.TRANSACTIONS_SI AS
+SELECT
+     tran_id
+    ,acct_nbr
+    ,tran_amt
+    ,principal_amt
+    ,interest_amt
+    ,new_balance
+    ,tran_date
+    ,tran_time
+    ,channel
+    ,tran_code
+    ,Event_Id
+    ,Account_Id
+    ,Start_Ts
+    ,End_Ts
+    ,Start_Date
+    ,End_Date
+    ,Record_Deleted_Flag
+    ,Ctl_Id
+    ,Process_Name
+    ,Process_Id
+    ,Update_Process_Name
+    ,Update_Process_Id
+FROM $ENVT_SRCI.TRANSACTIONS_SI
+;

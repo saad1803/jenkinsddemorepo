@@ -1,0 +1,16 @@
+REPLACE VIEW $ENVV_BASE.PARTY AS
+SELECT
+     Party_Id
+    ,Party_Type_Cd
+    ,Party_Strt_Dt
+    ,Address_Id
+    ,Start_Date
+    ,End_Date
+    ,Record_Deleted_Flag
+    ,Ctl_Id
+    ,Process_Name
+    ,Process_Id
+    ,Update_Process_Name
+    ,Update_Process_Id
+FROM $ENVT_BASE.PARTY
+;

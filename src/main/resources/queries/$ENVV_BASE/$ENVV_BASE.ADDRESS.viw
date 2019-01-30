@@ -1,0 +1,18 @@
+REPLACE VIEW $ENVV_BASE.ADDRESS AS
+SELECT
+    Address_Id
+    ,Street_Nbr
+    ,Street_Name
+    ,Postal_Code
+    ,City_Name
+    ,State_Code
+    ,Start_Date
+    ,End_Date
+    ,Record_Deleted_Flag
+    ,Ctl_Id
+    ,Process_Name
+    ,Process_Id
+    ,Update_Process_Name
+    ,Update_Process_Id
+FROM $ENVT_BASE.ADDRESS
+;

@@ -1,0 +1,19 @@
+REPLACE VIEW $ENVV_BASE.ACCOUNTS AS
+SELECT
+     Account_Id
+    ,Account_Start_Dt
+    ,Account_End_Dt
+    ,Account_Nbr
+    ,Account_Type_Cd
+    ,Account_Active_Cd
+    ,Account_Active
+    ,Start_Date
+    ,End_Date
+    ,Record_Deleted_Flag
+    ,Ctl_Id
+    ,Process_Name
+    ,Process_Id
+    ,Update_Process_Name
+    ,Update_Process_Id
+FROM $ENVT_BASE.ACCOUNTS
+;

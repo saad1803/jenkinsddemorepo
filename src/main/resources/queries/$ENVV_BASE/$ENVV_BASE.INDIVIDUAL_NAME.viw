@@ -1,0 +1,17 @@
+REPLACE VIEW $ENVV_BASE.INDIVIDUAL_NAME AS
+SELECT
+     Party_Id
+    ,Name_Prefix
+    ,Name_Type_Cd
+    ,Given_Name
+    ,Family_Name
+    ,Start_Date
+    ,End_Date
+    ,Record_Deleted_Flag
+    ,Ctl_Id
+    ,Process_Name
+    ,Process_Id
+    ,Update_Process_Name
+    ,Update_Process_Id
+FROM $ENVT_BASE.INDIVIDUAL_NAME
+;

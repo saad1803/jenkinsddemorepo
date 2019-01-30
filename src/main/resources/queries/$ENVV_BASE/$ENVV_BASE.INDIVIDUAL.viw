@@ -1,0 +1,19 @@
+REPLACE VIEW $ENVV_BASE.INDIVIDUAL AS
+SELECT
+     Party_Id
+    ,Income
+    ,Birth_Date
+    ,Date_Joined_Bank
+    ,Nbr_Children
+    ,Gender_Type_Cd
+    ,Marital_Type_Cd
+    ,Start_Date
+    ,End_Date
+    ,Record_Deleted_Flag
+    ,Ctl_Id
+    ,Process_Name
+    ,Process_Id
+    ,Update_Process_Name
+    ,Update_Process_Id
+FROM $ENVT_BASE.INDIVIDUAL
+;

@@ -1,0 +1,19 @@
+CREATE MULTISET TABLE $ENVT_BASE.PARTY_4_Minus , NO FALLBACK ,
+     NO BEFORE JOURNAL,
+     NO AFTER JOURNAL,
+     CHECKSUM = DEFAULT,
+     DEFAULT MERGEBLOCKRATIO
+     (
+      Party_Id INTEGER,
+      Party_Type_Cd SMALLINT,
+      Party_Strt_Dt DATE FORMAT 'YY/MM/DD',
+      Address_Id INTEGER,
+      Start_Date DATE FORMAT 'YY/MM/DD',
+      End_Date DATE FORMAT 'YY/MM/DD',
+      Record_Deleted_Flag BYTEINT,
+      Ctl_Id SMALLINT,
+      Process_Name VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
+      Process_Id INTEGER,
+      Update_Process_Name VARCHAR(30) CHARACTER SET LATIN NOT CASESPECIFIC,
+      Update_Process_Id INTEGER)
+PRIMARY INDEX ( Party_Id );

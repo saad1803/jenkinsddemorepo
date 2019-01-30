@@ -1,0 +1,23 @@
+REPLACE VIEW $ENVV_STG.ACCOUNTS AS
+SELECT
+     Acct_Nbr
+    ,Cust_Id
+    ,Acct_Type
+    ,Account_Active
+    ,Acct_Start_Date
+    ,Acct_End_Date
+    ,Starting_Balance
+    ,Ending_Balance
+    ,Start_Ts
+    ,End_Ts
+    ,Start_Date
+    ,End_Date
+    ,Record_Deleted_Flag
+    ,Ctl_Id
+    ,File_Id
+    ,Process_Name
+    ,Process_Id
+    ,Update_Process_Name
+    ,Update_Process_Id
+FROM $ENVT_STG.ACCOUNTS
+;
