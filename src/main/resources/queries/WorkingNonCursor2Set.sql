@@ -33,7 +33,10 @@ v_VOUCHER_NUMBER :=  '0' || TO_CHAR(v_TRAY_FROM_N + TRAY);
 INSERT INTO BH_2(ORDER_NO,ORDER_DATE,TRAY_FROM,TRAY_TO,TRAY_SEQUANCE,TRX_TYPE,VOUCHER_TYPE,FACE_VALUE)
 VALUES ( v_ORDER_NO,v_ORDER_DATE, v_TRAY_FROM, v_TRAY_TO,v_VOUCHER_NUMBER,v_TRX_TYPE,v_VOUCHER_TYPE,v_FACE_VALUE);
 
+select count(*) into myVar from MAIN_TABLE where i<0;
 
+
+INSERT INTO PENALTIES VALUES (1,  6, '1980-12-08',100);
 END LOOP;
 Commit;
 END LOOP;
@@ -49,3 +52,14 @@ RAISE;
 END;
 END ;
  
+–select 100 from a_table but_is_commented_out_so_do_not_count_me
+select 100;
+select 200
+select 300
+begin
+select 400;
+end
+if 1=2
+begin
+select 500
+end
